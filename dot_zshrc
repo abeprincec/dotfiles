@@ -106,10 +106,3 @@ export NVM_DIR="$HOME/.nvm"
 
 # attach to tmux without creating new session
 alias tmux="tmux attach || tmux"
-
-#tmux sessionizer
-tmux-sessionizer() {
-    ~/.local/bin/scripts/tmux-sessionizer
-}
-zle -N tmux-sessionizer
-bindkey -s ^f "tmux-sessionizer\n"
